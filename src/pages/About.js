@@ -1,5 +1,6 @@
 import React from "react";
 import { Heart, Calendar, Sparkles, Star } from "lucide-react";
+import rag9 from "../images/rag9.jpeg";
 
 const About = () => {
   const stats = [
@@ -62,9 +63,9 @@ const About = () => {
             </div>
 
             {/* Image placeholder */}
-            <div className="rounded-2xl overflow-hidden shadow-lg h-80 bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center">
+            <div className="rounded-2xl overflow-hidden shadow-lg  bg-gradient-to-br from-rose-200 to-pink-200 flex items-center justify-center">
               <img
-                src="/couple-in-love-romantic-portrait.jpg"
+                src={rag9}
                 alt="Our love story"
                 className="w-full h-full object-cover"
               />

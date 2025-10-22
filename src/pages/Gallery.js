@@ -1,5 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, X, Heart } from "lucide-react";
+import rag1 from "../images/rag1.jpeg";
+import rag2 from "../images/rag2.jpeg";
+import rag3 from "../images/rag3.jpeg";
+import rag4 from "../images/rag4.jpeg";
+import rag5 from "../images/rag5.jpeg";
+import rag6 from "../images/rag6.jpeg";
+import rag7 from "../images/rag7.jpeg";
+import rag8 from "../images/rag8.jpeg";
+import rag10 from "../images/rag10.jpeg";
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -11,57 +20,78 @@ export default function Gallery() {
       id: 1,
       title: "First Meeting",
       description: "The day our story began",
-      image: "/couple-meeting-romantic-moment.jpg",
+      image: rag2,
       size: "large",
     },
     {
       id: 2,
       title: "Beach Sunset",
       description: "Watching the sunset together",
-      image: "/romantic-beach-sunset-couple.png",
+      image: rag1,
       size: "medium",
     },
     {
       id: 3,
       title: "Adventure Time",
       description: "Exploring new places together",
-      image: "/couple-hiking-adventure-nature.jpg",
+      image: rag3,
       size: "medium",
     },
     {
       id: 4,
       title: "Cozy Nights",
       description: "Our favorite moments at home",
-      image: "/couple-cozy-home-romantic.jpg",
+      image: rag4,
       size: "small",
     },
     {
       id: 5,
       title: "Dancing Together",
       description: "Lost in the music and each other",
-      image: "/couple-dancing-romantic-night.jpg",
+      image: rag5,
       size: "large",
     },
     {
       id: 6,
       title: "Dreaming Together",
       description: "Planning our future",
-      image: "/couple-dreaming-future-together.jpg",
+      image: rag6,
+      size: "medium",
+    },
+    {
+      id: 7,
+      title: "Memories",
+      description: "Captured moments",
+      image: rag7,
+      size: "small",
+    },
+    {
+      id: 8,
+      title: "More Memories",
+      description: "Another special moment",
+      image: rag8,
+      size: "medium",
+    },
+    {
+      id: 8,
+      title: "More Memories",
+      description: "Another special moment",
+      image: rag10,
       size: "medium",
     },
   ];
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     if (selectedImage !== null) {
       setSelectedImage(selectedImage === 0 ? galleryImages.length - 1 : selectedImage - 1);
     }
-  };
+  }, [selectedImage, galleryImages.length]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (selectedImage !== null) {
       setSelectedImage(selectedImage === galleryImages.length - 1 ? 0 : selectedImage + 1);
     }
-  };
+  }, [selectedImage, galleryImages.length]);
 
   const handleTouchStart = (e) => {
     setTouchStart(e.targetTouches[0].clientX);
@@ -87,7 +117,7 @@ export default function Gallery() {
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [selectedImage]);
+  }, [selectedImage, handleNext, handlePrevious]);
 
   const getGridClass = (size) => {
     switch (size) {

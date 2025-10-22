@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff7aa2" />
+      <stop offset="1" stop-color="#ffcf6e" />
+    </linearGradient>
+    <style>
+      .title { font: 700 40px/1.2 'Inter', Arial, sans-serif; fill: white }
+      .subtitle { font: 400 20px/1.2 'Inter', Arial, sans-serif; fill: rgba(255,255,255,0.9) }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)" rx="24"/>
+  <g transform="translate(40,80)">
+    <text class="title">Placeholder Image</text>
+    <text class="subtitle" y="56">This is a dummy image for the gallery</text>
+  </g>
+</svg>
