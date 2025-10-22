@@ -150,7 +150,7 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-3 mb-4 mt-16">
             <Heart className="w-6 h-6 md:w-8 md:h-8 text-rose-500 fill-rose-500" />
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-rose-600 via-pink-500 to-red-500 bg-clip-text text-transparent">
               Our Gallery

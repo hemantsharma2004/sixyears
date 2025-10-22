@@ -55,7 +55,7 @@ function CountdownPage() {
     <div className="min-h-screen px-4 py-12 bg-gradient-to-br from-rose-50 via-pink-50 to-red-50">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-4">
             Countdown to Our Next Anniversary
           </h2>
@@ -80,7 +80,7 @@ function CountdownPage() {
         {/* Message Cards */}
         <div className="grid md:grid-cols-2 gap-6 mb-12">
           <div className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl border border-rose-200/50 p-8">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-4 ">
               <Calendar className="w-6 h-6 text-rose-500" />
               <h3 className="text-xl font-bold text-rose-600">Our Journey</h3>
             </div>
