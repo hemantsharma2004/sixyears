@@ -24,7 +24,7 @@ function ReasonsCard() {
     <div className="min-h-screen px-4 py-12">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 mt-16">
+        <div className="text-center mb-12 mt-10">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-4">
             Why I Love You
           </h2>

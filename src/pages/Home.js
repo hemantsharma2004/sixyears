@@ -114,7 +114,7 @@ export default function Home() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 mt-16">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 mt-10">
         <div className="text-center mb-12 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Sparkles

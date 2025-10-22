@@ -28,7 +28,7 @@ Hemant
     <div className="min-h-screen px-4 py-12 bg-gradient-to-br from-rose-50 via-pink-50 to-red-50">
       <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 mt-16">
+        <div className="text-center mb-12 mt-10">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-rose-500 to-pink-500 bg-clip-text text-transparent mb-4">
             A Love Letter
           </h2>
